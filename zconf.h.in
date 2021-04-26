@@ -255,9 +255,9 @@
 /* Maximum value for memLevel in deflateInit2 */
 #ifndef MAX_MEM_LEVEL
 #  ifdef MAXSEG_64K
-#    define MAX_MEM_LEVEL 8
+#    define MAX_MEM_LEVEL 5
 #  else
-#    define MAX_MEM_LEVEL 9
+#    define MAX_MEM_LEVEL 5
 #  endif
 #endif
 
@@ -267,7 +267,7 @@
  * gzip.)
  */
 #ifndef MAX_WBITS
-#  define MAX_WBITS   15 /* 32K LZ77 window */
+#  define MAX_WBITS   12 /* 32K LZ77 window */
 #endif
 
 /* The memory requirements for deflate are (in bytes):
